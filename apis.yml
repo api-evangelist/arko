@@ -23,6 +23,8 @@ modified: '2026-04-19'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/arko-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/arko-corp-us
   - type: Website
@@ -61,6 +63,8 @@ common:
         description: >-
           Independent fuel dealers and operators receive wholesale fuel supply
           through ARKO's petroleum distribution network.
+  - url: https://www.arkocorp.com/news-events/press-releases/rss
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
