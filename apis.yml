@@ -41,7 +41,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/arko/refs/heads/main/apis.yml
 created: '2026-03-21'
-modified: '2026-04-19'
+modified: '2026-09-18'
 specificationVersion: '0.23'
 apis: []
 common:
@@ -87,6 +87,43 @@ common:
           through ARKO's petroleum distribution network.
   - url: https://www.arkocorp.com/news-events/press-releases/rss
     type: Blog
+  - type: PrivacyPolicy
+    url: https://www.arkocorp.com/privacy-policy
+  - type: LLMsTxt
+    url: llms/arko-llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-18'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    ARKO Corp is a convenience-store operator and fuel wholesaler whose entire public web
+    presence is an investor-relations site, a WordPress subsidiary site and a loyalty-app
+    marketing page; every /.well-known/ discovery path, /openapi.json, /swagger.json,
+    /api-docs and /llms.txt returned 404 on arkocorp.com, gpminvestments.com,
+    fasrewards.com and arkopetroleum.com, no developer subdomain resolves (the two
+    wildcard-DNS domains serve the marketing page or a bare 404 on api./developer.),
+    and the only machine-readable endpoint anywhere is the stock WordPress /wp-json
+    discovery document on gpminvestments.com.
+  evidence:
+    - url: https://www.arkocorp.com/openapi.json
+      status: 404
+    - url: https://www.arkocorp.com/.well-known/security.txt
+      status: 404
+    - url: https://www.arkocorp.com/llms.txt
+      status: 404
+    - url: https://www.gpminvestments.com/.well-known/api-catalog
+      status: 404
+    - url: https://api.fasrewards.com/openapi.json
+      status: 404
+    - url: https://api.arkopetroleum.com/openapi.json
+      status: 404
+    - url: https://www.gpminvestments.com/wp-json
+      status: 200
+  checked: '2026-09-18'

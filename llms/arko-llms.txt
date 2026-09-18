@@ -1,0 +1,59 @@
+# ARKO Corp
+
+> ARKO Corp (Nasdaq: ARKO) is a Fortune 500 company and one of the largest operators of
+> convenience stores and wholesalers of fuel in the United States. Through its subsidiary GPM
+> Investments it operates roughly 1,400 company-operated stores under 25+ regional brands across
+> 30+ states, plus proprietary cardlock fleet-fueling locations and a wholesale fuel distribution
+> business. In 2026 ARKO completed the IPO of ARKO Petroleum Corp., which carries the wholesale,
+> fleet fueling and petroleum distribution segments.
+
+## Machine-readable API surface
+
+**ARKO Corp publishes no API.** As of 2026-09-18 the company operates no developer program, no
+developer portal, no SDK, and no machine-readable contract of any kind. This was established by
+probe, not by assumption:
+
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, MCP server or A2A agent card on any host the company
+  controls: arkocorp.com, gpminvestments.com, fasrewards.com, arkopetroleum.com (each with and
+  without `www.`).
+- Every closed-list `/.well-known/` discovery path (security.txt, openid-configuration,
+  oauth-authorization-server, oauth-protected-resource, api-catalog, ai-plugin.json, ucp.json,
+  acp.json, aauth-resource.json, apis.json, agent-card.json, agent.json) plus `/apis.json`,
+  `/apis.yml`, `/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/api-docs` and `/llms.txt`
+  returned 404 on all four hosts (see `well-known/arko-well-known.yml`).
+- `fasrewards.com` and `arkopetroleum.com` use wildcard DNS, so `api.`, `developer.`, `docs.`
+  and any other subdomain resolve — but they serve the same marketing page (fasrewards) or a
+  bare 404 (arkopetroleum). No developer subdomain of `arkocorp.com` or `gpminvestments.com`
+  resolves at all.
+- `www.gpminvestments.com` is a WordPress install whose `/wp-json` endpoint serves the stock
+  WordPress REST discovery document (wp/v2, oembed/1.0, elementor, wordfence, contact-form-7 and
+  similar plugin namespaces). That is default CMS infrastructure, not a product API ARKO designed,
+  documented or supports, so it is deliberately NOT catalogued as an ARKO API.
+- The fas REWARDS loyalty program is delivered as a consumer mobile app (App Store / Google
+  Play) with no public integration surface.
+
+If you are an agent looking for a callable ARKO Corp API, there is not one to call.
+
+## Company pages
+
+- [Investor Relations home](https://www.arkocorp.com/): corporate overview, stock and filings.
+- [Company Information](https://www.arkocorp.com/company-information): business description,
+  segments and store brands.
+- [Press releases (RSS)](https://www.arkocorp.com/news-events/press-releases/rss): dated news feed.
+- [Privacy Policy](https://www.arkocorp.com/privacy-policy): investor-site privacy policy.
+- [GPM Investments](https://www.gpminvestments.com/): the operating subsidiary's site.
+- [fas REWARDS](https://www.fasrewards.com/): the loyalty program's consumer site.
+- [ARKO Petroleum Corp.](https://www.arkopetroleum.com/): the 2026 wholesale / fleet fueling
+  spin-out's investor site.
+- [LinkedIn](https://www.linkedin.com/company/arko-corp-us)
+
+## Profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/arko/refs/heads/main/apis.yml):
+  the APIs.json index for this profile (no `apis[]` entries — none exist to list).
+- [Domain security](security/arko-domain-security.yml): TLS 1.3 on www.arkocorp.com, no HSTS,
+  no DNSSEC, no CAA, SPF present, no DMARC (probed 2026-09-18).
+
+Generated 2026-09-18 by the API Evangelist enrichment pipeline from apis.yml and the probes
+recorded in this repository. Method: generated. ARKO Corp publishes no llms.txt of its own
+(`https://www.arkocorp.com/llms.txt` returned 404).
