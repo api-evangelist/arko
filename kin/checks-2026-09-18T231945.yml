@@ -2,16 +2,16 @@
 kin_checks:
   slug: arko
   schema_version: 0.22.0
-  scored_at: '2026-09-17'
-  run_ts: 2026-09-17T233623
+  scored_at: '2026-09-18'
+  run_ts: 2026-09-18T231945
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.22.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 136
-    earned: 9
+    earned: 12
     partial: 0
-    missed: 83
+    missed: 80
     na: 44
   checks:
   - id: multiple_apis
@@ -21,8 +21,6 @@ kin_checks:
   - id: base_url_per_api
     status: missed
   - id: well_known_published
-    status: missed
-  - id: llms_txt_published
     status: missed
   - id: apis_json_self_hosted
     status: missed
@@ -112,8 +110,6 @@ kin_checks:
     status: missed
   - id: terms_of_service
     status: missed
-  - id: privacy_policy
-    status: missed
   - id: finops_mapped
     status: missed
   - id: compliance_published
@@ -127,8 +123,6 @@ kin_checks:
   - id: reg_vulnerability_disclosure
     status: missed
   - id: reg_terms_of_service
-    status: missed
-  - id: reg_privacy_policy
     status: missed
   - id: reg_compliance_published
     status: missed
