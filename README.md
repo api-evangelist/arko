@@ -1,4 +1,4 @@
-# ARKO Corp (arko)
+# ARKO
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,47 +66,80 @@
 
 ARKO Corp (Nasdaq: ARKO) is a Fortune 500 company and one of the largest operators of convenience stores and wholesalers of fuel in the United States. Through its subsidiary GPM Investments, ARKO operates approximately 1,400 company-operated stores under 25+ regional brands across 30+ states, as well as proprietary cardlock locations and a fleet fueling network. In 2026, ARKO completed the IPO of ARKO Petroleum Corp., which operates its wholesale, fleet fueling, and petroleum distribution segments.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/arko/refs/heads/main/apis.yml)
+**Areas:** Convenience Stores · Fleet Fueling · Fuel · Petroleum · Retail
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## ARKO on APIs.io
 
-## Tags:
+Everything profiled for ARKO is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/arko/](https://apis.io/providers/arko/)** — or go straight to one of the APIs or properties below.
 
- - Convenience Stores, Fleet Fueling, Fuel, Petroleum, Retail
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-No public APIs have been documented for ARKO Corp. The company operates convenience stores, wholesale fuel distribution, and fleet fueling services but does not currently offer a public developer API.
+- [Arko Domain Security](https://apis.io/security/arko/arko-domain-security/)
 
-## Common Properties
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.arkocorp.com)
 - [Documentation](https://www.arkocorp.com/company-information)
+- [Blog](https://www.arkocorp.com/news-events/press-releases/rss)
+- [Privacy policy](https://www.arkocorp.com/privacy-policy)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Convenience Store Network | Operates approximately 1,400 company-operated convenience stores under 25+ regional brands across 30+ U.S. states and Washington D.C. |
-| Fleet Fueling Cards | Proprietary fleet fuel cards providing access to a nationwide network of fueling sites including cardlock locations for commercial fleets. |
-| Wholesale Fuel Distribution | Wholesale fuel supply to approximately 1,660 independent dealer sites through GPM Petroleum and ARKO Petroleum Corp. |
-| Cardlock Operations | Operates approximately 121 proprietary cardlock (unstaffed) fueling locations for fleet and commercial vehicle fueling. |
+**Kin Score 9.2** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 10.5 |
 
-| Name | Description |
-|------|-------------|
-| Fleet Fuel Management | Commercial fleets use ARKO's proprietary fuel card network to manage fuel expenses and access cardlock fueling locations nationwide. |
-| Convenience Retail | Retail consumers purchase food, beverages, and fuel at ARKO-operated convenience stores under regional brand names. |
-| Wholesale Fuel Supply | Independent fuel dealers and operators receive wholesale fuel supply through ARKO's petroleum distribution network. |
+**Agent readiness 0.0** — human-only
 
-## Maintainers
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-**FN:** Kin Lane
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
 
-**Email:** kin@apievangelist.com
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/arko/](https://apis.io/providers/arko/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ARKO: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/arko/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
